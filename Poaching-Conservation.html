@@ -74,10 +74,10 @@
 
 .map-overlay2 {
 position: absolute;
-bottom: 240px;
+bottom: 10px;
 right: 0;
 background: rgba(255, 255, 255, 0.9);
-margin-right: 1070px;
+margin-right: 1050px;
 font-family: Arial, sans-serif;
 overflow: auto;
 border-radius: 0px;
@@ -86,9 +86,9 @@ border-radius: 0px;
 padding: 5px;
 box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
 line-height: 25px;
-height: 160px;
+height: 200px;
 margin-bottom: 50px;
-width: 190px;
+width: 200px;
 }
 .legend-key {
 display: inline-block;
@@ -100,8 +100,15 @@ margin-right: 5px;
 .map-overlay2 h3 {
 	line-height: 18px;
 	display: block;
-	margin: 0px 2px 15px;
+	margin: 0px 30px 15px;
 }
+.map-overlay2 h5 {
+	line-height: 18px;
+	display: block;
+	margin: 0px 30px 100px;
+}
+
+
 .map-overlay-text {
   position: absolute;
   bottom: 10px;
@@ -186,12 +193,13 @@ margin-right: 5px;
 		<p>-In-Situ Conservation Management</p>
 		<p>-Community-Based Program Conservations</p>
 		<p>-Increasing Capacity Buildings</p>
-	</div>
+</div>
 
 
 	<script>
-	var layers = ['<h3>Total Number of Rhinos Seized/Poached in 2010-2015</h3>', '1-5','6-11', '25-35', '75-120'];
-	var colors = ['', '#fdc9c9', '#f73b3b', '#dd0808', '#860909'];
+	var layers = ['<strong>Total Number of Rhinos Seized/Poached in 2010-2015</strong>', '1-5','6-11', '25-35', '75-120','', '<strong>Countries Involved in Conservation</strong>'];
+	var colors = ['', '#fdc9c9', '#f73b3b', '#dd0808', '#860909','', '#774a82'];
+
 
 					for (i = 0; i < layers.length; i++) {
 						var layer = layers[i];
@@ -208,5 +216,6 @@ margin-right: 5px;
 						legend.appendChild(item);
 					}
 </script>
+
 </body>
 </html>
